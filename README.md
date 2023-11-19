@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🖥️ Automated Order Fulfillment System - Frontend
 
-## Getting Started
+## 📋 Table of Contents
 
-First, run the development server:
+- [🚀 Introduction](#-introduction)
+- [🎨 Frontend Overview](#-frontend-overview)
+- [🛠️ Technologies Used](#%EF%B8%8F-technologies-used)
+- [⚡ Features](#-features)
+- [🔧 Configuration](#-configuration)
+- [🚀 Deployment](#-deployment)
+- [🤝 Contributing](#-contributing)
+- [📝 License](#-license)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Introduction
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Welcome to the frontend section of the Automated Order Fulfillment System. This part encompasses the user-facing interface allowing users to place orders and manage the order pickup process.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Frontend Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The frontend is a web-based interface developed using modern web technologies. It facilitates user interaction by allowing users to place orders, associate items with RFID codes, and receive pickup confirmations.
 
-## Learn More
+## 🛠️ Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+The frontend utilizes the following technologies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **React**: JavaScript library for building user interfaces.
+- **Next.js**: React framework for server-rendered applications.
+- **HTML/CSS/JavaScript**: Core web technologies for structure, styling, and interactivity.
+- **Vercel**: Deployment platform for hosting the frontend application.
+- **Prisma DB**: ORM for TypeScript and JavaScript, enabling type-safe database access.
+- **PlanetScale**: Scalable relational database system built on MySQL.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## ⚡ Features
 
-## Deploy on Vercel
+The frontend provides the following key features:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Order Placement**: Allows users to place orders through a user-friendly interface.
+- **RFID Association**: Associates each item within an order with a unique RFID code.
+- **Order Pickup Confirmation**: Provides confirmation and pickup details for users after order completion.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🔧 Configuration
+
+To configure the frontend:
+
+1. **Install Prisma CLI**: Run `npm install prisma -g` to install the Prisma CLI globally.
+2. **Setup Prisma Configuration**: Create a `prisma/schema.prisma` file and define your data model for PlanetScale.
+3. **Database Connection**: Define the connection to your PlanetScale database in `prisma/schema.prisma`.
+4. **Generate Prisma Client**: Run `npx prisma generate` to generate the Prisma Client.
+5. **Environment Variables**: Define environment variables for the frontend to connect with Prisma and PlanetScale.
+
+## 🚀 Deployment
+
+For deployment:
+
+1. **Deployment Setup on Vercel**:
+   - Create an account on Vercel.
+   - Connect your GitHub repository to Vercel.
+   - Define environment variables related to Prisma and PlanetScale in Vercel's settings.
+
+2. **Deploy Frontend Application**:
+   - Trigger a deployment in Vercel after setting up configurations.
+
+## 🤝 Contributing
+
+Contributions to improve UI/UX or add new frontend features are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature`
+3. Make changes and commit: `git commit -m 'Add your feature'`
+4. Push to the branch: `git push origin feature/your-feature`
+5. Submit a pull request.
+
+## 📝 License
+
+This project is licensed under the [GNU GPLv3 License](LICENSE).
