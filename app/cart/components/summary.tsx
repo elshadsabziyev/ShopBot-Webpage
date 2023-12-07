@@ -9,6 +9,7 @@ import useCart from "@/hooks/use-cart";
 
 const Summary = () => {
   const items = useCart((state) => state.items);
+  const cart = useCart();
 
   const totalPrice = items.reduce((total, item) => {
     return total + Number(item.price);
@@ -20,6 +21,7 @@ const Summary = () => {
         productTags: items.map((item) => item.tag),
       });
       toast.success("Your items are on the way, please wait!");
+      cart.removeAll();
     } catch (error) {
       toast.error("Something went wrong, please try again!");
     }
