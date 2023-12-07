@@ -19,14 +19,14 @@ export const data = [
     title: "Bed Frame",
     price: 21,
     imgUrl: "/bed-frame.webp",
-    tag: "0003",
+    tag: "78F0A489",
   },
   {
     id: 4,
     title: "Desk",
     price: 21,
     imgUrl: "/desk.avif",
-    tag: "0004",
+    tag: "F97A42B8",
   },
   {
     id: 5,
